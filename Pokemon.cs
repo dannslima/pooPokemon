@@ -40,7 +40,7 @@ namespace pooPokemon
         public void ExibirDadosPokemon()
         {
             Console.WriteLine("Nome do Pokemon: " + this._Nome);
-            Console.WriteLine("Descrição do Pokemon" + this._Descricao);
+            Console.WriteLine("Descrição do Pokemon " + this._Descricao);
         }
 
         public void ExibirDadosPokemon(Boolean formatado)
