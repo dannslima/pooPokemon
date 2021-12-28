@@ -8,6 +8,7 @@ namespace pooPokemon
 {
     public class Pokemon
     {
+        
         public Pokemon()
         {
             this._Nome = "";
@@ -37,11 +38,12 @@ namespace pooPokemon
             set { this.descricao = value; }
         }
 
-        public void ExibirDadosPokemon()
-        {
-            Console.WriteLine("Nome do Pokemon: " + this._Nome);
-            Console.WriteLine("Descrição do Pokemon " + this._Descricao);
-        }
+        //public void ExibirDadosPokemon()
+        //{
+        //    Console.WriteLine("Nome do Pokemon: " + this._Nome);
+        //    Console.WriteLine("Descrição do Pokemon " + this._Descricao);
+            
+        //}
 
         public void ExibirDadosPokemon(Boolean formatado)
         {

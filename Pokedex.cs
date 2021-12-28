@@ -12,9 +12,9 @@ namespace pooPokemon
         {
             this.InicializaLista();
         }
-        private List <Pokemon> pokemons;
+        private List <PokemonPlus> pokemons;
 
-        public List<Pokemon> _Pokemons
+        public List<PokemonPlus> _Pokemons
         {
             get { return  pokemons; }
             
@@ -23,26 +23,26 @@ namespace pooPokemon
         private void InicializaLista()
         {
             //Instanciar a lista
-            this.pokemons = new List<Pokemon>();
-            Pokemon p = new Pokemon("Bubassauro","Ele é do Tipo Planta");
+            this.pokemons = new List<PokemonPlus>();
+            PokemonPlus p = new PokemonPlus("Bubassauro","Ele é do Tipo Planta",45);
             this.pokemons.Add(p);
-            p = new Pokemon("Charmander", "Tipo dragão fogo");
+            p = new PokemonPlus("Charmander", "Tipo dragão fogo",30);
             this.pokemons.Add(p);
-            p = new Pokemon("Pikachu", "Tipo gato eletrico");
+            p = new PokemonPlus("Pikachu", "Tipo gato eletrico",39);
             this.pokemons.Add(p);
-            p = new Pokemon("Squarte", "Tipo tartaruga marinha");
+            p = new PokemonPlus("Squarte", "Tipo tartaruga marinha",21);
             this.pokemons.Add(p);
-            p = new Pokemon("blastoize", "Tipo tartaruga evoluída");
+            p = new PokemonPlus("blastoize", "Tipo tartaruga evoluída",50);
             this.pokemons.Add(p);
-            p = new Pokemon("Charizard", "Tipo dragão fogo pokevoluido");
+            p = new PokemonPlus("Charizard", "Tipo dragão fogo pokevoluido",50);
             this.pokemons.Add(p);
-            p = new Pokemon("Miau", "Tipo gato da equipe roquet");
+            p = new PokemonPlus("Miau", "Tipo gato da equipe roquet",10);
             this.pokemons.Add(p);
-            p = new Pokemon("Mewtwuo", "Tipo raro");
+            p = new PokemonPlus("Mewtwuo", "Tipo raro",100);
             this.pokemons.Add(p);
-            p = new Pokemon("Mio", "Tipo rarissimo");
+            p = new PokemonPlus("Mio", "Tipo rarissimo",110);
             this.pokemons.Add(p);
-            p = new Pokemon("Metagross", "Tipo louco");
+            p = new PokemonPlus("Metagross", "Tipo louco",80);
             this.pokemons.Add(p);
 
         }
@@ -50,7 +50,8 @@ namespace pooPokemon
         {
             for (int i = 0; i < this._Pokemons.Count; i++)
             {
-                this._Pokemons[i].ExibirDadosPokemon();
+                Console.WriteLine("CODIGO POKEMON: " + i);
+                this._Pokemons[i].ExibirDadosPokemonPlus();
                 
             }
         }
