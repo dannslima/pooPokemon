@@ -30,8 +30,15 @@ namespace pooPokemon
                     Random r = new Random();
                     codigo = r.Next(0, pokedex._Pokemons.Count);
                     PokemonPlus pPc = pokedex._Pokemons[codigo];
+                    Console.Clear();
 
                     //batalhar
+                    Console.WriteLine("Dados do pokemons que irão lutar**************************");
+                    Console.WriteLine("Dados do seu Pokemon");
+                    pPlayer.ExibirDadosPokemonPlus();
+                    Console.WriteLine("Dados do Pokemon da máquina");
+                    pPc.ExibirDadosPokemonPlus();
+
                     if (pPlayer._Poder >= pPc._Poder)
                     {
                         Console.WriteLine(pPlayer._Nome + " X " + pPc._Nome);
